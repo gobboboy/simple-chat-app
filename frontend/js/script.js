@@ -79,7 +79,7 @@ const handleLogin = (event) => {
     login.style.display = "none";
     chat.style.display = "flex";
 
-    websocket = new WebSocket("ws://localhost:3030");
+    websocket = new WebSocket("wss://gobbo-chat-backend.onrender.com");
     websocket.onmessage = processMessage;
 }
 
